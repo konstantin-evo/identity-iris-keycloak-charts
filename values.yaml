@@ -33,6 +33,11 @@ global:
   #  password: changeme
   imagePullPolicy: IfNotPresent
 
+  # Configuration for external secrets integration (e.g., HashiCorp Vault, AWS Secrets Manager, etc.)
+  externalSecrets:
+    enabled: false
+    path: "secret/data/my-app"
+
   database:
     location: local
     #port: 5432
